@@ -9,10 +9,10 @@
 (define (print-header numdice numpossible)
   (printf "\n**number of dice = ~a**, " numdice)
   (printf "total possibilities = ~a\n" numpossible)
-  (display "| Want | Chances | % Prob | 1 pt |")
+  (display "| Want | Chances | % Prob | | 1 pt |")
   (for/list ([p (cdr POINTS)]) (printf " ~a pts |" p))
   (newline)
-  (display "| :---: | ---: | ---: |")
+  (display "| :---: | ---: | ---: | --- |")
   (for ([p POINTS]) (display " --- |"))
   (newline))
   
@@ -36,7 +36,7 @@
            (define chances (count (curry <= i) rolls))
            (define prob (/ chances NUMPOSSIBLE))
            (define prob-no (- 1 prob))
-           (printf "| >= ~a | ~a / ~a | ~a% |"
+           (printf "| >= ~a | ~a / ~a | ~a% | |"
                    (~a i #:min-width 2)
                    (~r chances #:min-width $n)
                    NUMPOSSIBLE
@@ -47,7 +47,7 @@
                      ; expected pts per card = expected pts / expected cards
                      (~r (exact->inexact
                           (/ (* prob pts)
-                             ;; num cards = NUMDICE
+                             ;; num cards = NUMDICE; miss costs 1 card
                              (+ (* prob NUMDICE) prob-no)))
                          #:precision '(= 2) #:min-width 4)))
            (newline)))]))
