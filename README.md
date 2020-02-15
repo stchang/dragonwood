@@ -3,7 +3,7 @@
 Each die has sides: 1, 2, 2, 3, 3, 4
 
 **number of dice = 1**, total possibilities = 6
-| Want | Chances | % |
+| Want | Chances | %   |
 | :---: | ---: | ---: |
 | >= 1  | 6 / 6 | 100.00% |
 | >= 2  | 5 / 6 |  83.33% |
@@ -11,7 +11,7 @@ Each die has sides: 1, 2, 2, 3, 3, 4
 | >= 4  | 1 / 6 |  16.67% |
 
 **number of dice = 2**, total possibilities = 36
-| Want | Chances | % |
+| Want | Chances | %   |
 | :---: | ---: | ---: |
 | >= 2  | 36 / 36 | 100.00% |
 | >= 3  | 35 / 36 |  97.22% |
@@ -22,7 +22,7 @@ Each die has sides: 1, 2, 2, 3, 3, 4
 | >= 8  |  1 / 36 |   2.78% |
 
 **number of dice = 3**, total possibilities = 216
-| Want | Chances | % |
+| Want | Chances | %   |
 | :---: | ---: | ---: |
 | >= 3  | 216 / 216 | 100.00% |
 | >= 4  | 215 / 216 |  99.54% |
@@ -36,7 +36,7 @@ Each die has sides: 1, 2, 2, 3, 3, 4
 | >= 12 |   1 / 216 |   0.46% |
 
 **number of dice = 4**, total possibilities = 1296
-| Want | Chances | % |
+| Want | Chances | %   |
 | :---: | ---: | ---: |
 | >= 4  | 1296 / 1296 | 100.00% |
 | >= 5  | 1295 / 1296 |  99.92% |
@@ -53,7 +53,7 @@ Each die has sides: 1, 2, 2, 3, 3, 4
 | >= 16 |    1 / 1296 |   0.08% |
 
 **number of dice = 5**, total possibilities = 7776
-| Want | Chances | % |
+| Want | Chances | %   |
 | :---: | ---: | ---: |
 | >= 5  |  7776 / 7776 | 100.00% |
 | >= 6  |  7775 / 7776 |  99.99% |
@@ -73,7 +73,7 @@ Each die has sides: 1, 2, 2, 3, 3, 4
 | >= 20 |     1 / 7776 |   0.01% |
 
 **number of dice = 6**, total possibilities = 46656
-| Want | Chances | % |
+| Want | Chances | %   |
 | :---: | ---: | ---: |
 | >= 6  |  46656 / 46656 | 100.00% |
 | >= 7  |  46655 / 46656 | 100.00% |
