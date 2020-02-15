@@ -6,7 +6,7 @@
 (define NUMSIDES (length DIE))
 
 (define (print-header numdice numpossible)
-  (printf "\nnumber of dice = ~a, " numdice)
+  (printf "\n*number of dice = ~a*, " numdice)
   (printf "total possibilities = ~a\n" numpossible)
   (printf "| Want | Chances | % |\n")
   (printf "| :---: | :---: | :---: |\n"))
@@ -41,4 +41,8 @@
      #:with (n ...) (datum->syntax #'$maxn (build-list (syntax-e #'$maxn) add1))
      #'(begin (generate-probabilities #:num-dice n) ...)]))
 
-(gen-all #:max-dice 6)
+(with-output-to-file "README.md" #:exists 'replace
+  (λ ()
+    (printf "## Dice probabilities for the game Dragonwood\n\n")
+    (printf "Each die has sides: 1, 2, 2, 3, 3, 4\n")
+    (gen-all #:max-dice 6)))

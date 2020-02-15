@@ -1,7 +1,8 @@
-# dragonwood
-Dice probabilities for the game Dragonwood
+## Dice probabilities for the game Dragonwood
 
-number of dice = 1, total possibilities = 6
+Each die has sides: 1, 2, 2, 3, 3, 4
+
+*number of dice = 1*, total possibilities = 6
 | Want | Chances | % |
 | :---: | :---: | :---: |
 | >= 1  | 6 | 100.00% |
@@ -9,7 +10,7 @@ number of dice = 1, total possibilities = 6
 | >= 3  | 3 |  50.00% |
 | >= 4  | 1 |  16.67% |
 
-number of dice = 2, total possibilities = 36
+*number of dice = 2*, total possibilities = 36
 | Want | Chances | % |
 | :---: | :---: | :---: |
 | >= 2  | 36 | 100.00% |
@@ -20,7 +21,7 @@ number of dice = 2, total possibilities = 36
 | >= 7  |  5 |  13.89% |
 | >= 8  |  1 |   2.78% |
 
-number of dice = 3, total possibilities = 216
+*number of dice = 3*, total possibilities = 216
 | Want | Chances | % |
 | :---: | :---: | :---: |
 | >= 3  | 216 | 100.00% |
@@ -34,7 +35,7 @@ number of dice = 3, total possibilities = 216
 | >= 11 |   7 |   3.24% |
 | >= 12 |   1 |   0.46% |
 
-number of dice = 4, total possibilities = 1296
+*number of dice = 4*, total possibilities = 1296
 | Want | Chances | % |
 | :---: | :---: | :---: |
 | >= 4  | 1296 | 100.00% |
@@ -51,7 +52,7 @@ number of dice = 4, total possibilities = 1296
 | >= 15 |    9 |   0.69% |
 | >= 16 |    1 |   0.08% |
 
-number of dice = 5, total possibilities = 7776
+*number of dice = 5*, total possibilities = 7776
 | Want | Chances | % |
 | :---: | :---: | :---: |
 | >= 5  |  7776 | 100.00% |
@@ -71,7 +72,7 @@ number of dice = 5, total possibilities = 7776
 | >= 19 |    11 |   0.14% |
 | >= 20 |     1 |   0.01% |
 
-number of dice = 6, total possibilities = 46656
+*number of dice = 6*, total possibilities = 46656
 | Want | Chances | % |
 | :---: | :---: | :---: |
 | >= 6  |  46656 | 100.00% |
