@@ -28,9 +28,10 @@
          (print-header NUMDICE NUMPOSSIBLE)
          (for ([i (in-range (* NUMDICE 1) (add1 (* NUMDICE 4)))])
            (define chances (count (curry <= i) rolls))
-           (printf "| >= ~a | ~a | ~a% |\n"
+           (printf "| >= ~a | ~a / ~a | ~a% |\n"
                    (~a i #:min-width 2)
                    (~r chances #:min-width $n)
+                   NUMPOSSIBLE
                    (~r (exact->inexact (* 100 (/ chances NUMPOSSIBLE)))
                        #:precision '(= 2) #:min-width 6))))]))
 
@@ -43,6 +44,6 @@
 
 (with-output-to-file "README.md" #:exists 'replace
   (λ ()
-    (printf "## Dice probabilities for the game Dragonwood\n\n")
+    (printf "#Dice probabilities for the game Dragonwood\n\n")
     (printf "Each die has sides: 1, 2, 2, 3, 3, 4\n")
     (gen-all #:max-dice 6)))
