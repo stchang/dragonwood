@@ -63,5 +63,16 @@
 (with-output-to-file "README.md" #:exists 'replace
   (λ ()
     (printf "# Dice probabilities for the game Dragonwood\n\n")
-    (printf "Each die has sides: 1, 2, 2, 3, 3, 4\n")
+    (printf "Each die has sides: 1, 2, 2, 3, 3, 4\n\n")
+    (let* ([dragon-prob (/ 13 36)] [dragon-prob-no (- 1 dragon-prob)])
+      (printf "Dragon Spell = ~a% to get 6 or 7 pts = ~a or ~a pts/card\n"
+              (~r (exact->inexact (* 100 dragon-prob)) #:precision '(= 2))
+              (~r (exact->inexact
+                   (/ (* dragon-prob 6)
+                      (+ (* dragon-prob 3) (* dragon-prob-no 2))))
+                  #:precision '(= 2))
+              (~r (exact->inexact
+                   (/ (* dragon-prob 7)
+                      (+ (* dragon-prob 3) (* dragon-prob-no 2))))
+                  #:precision '(= 2))))
     (gen-all #:max-dice 6)))

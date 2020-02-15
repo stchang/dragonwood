@@ -2,6 +2,8 @@
 
 Each die has sides: 1, 2, 2, 3, 3, 4
 
+Dragon Spell = 36.11% to get 6 or 7 pts = 0.92 or 1.07 pts/card
+
 **number of dice = 1**, total possibilities = 6
 | Want | Chances | % Prob | targeting: | 1 pt | 2 pts | 3 pts | 4 pts | 5 pts | 6 pts | 7 pts |
 | :---: | ---: | ---: | --- | --- | --- | --- | --- | --- | --- | --- |
