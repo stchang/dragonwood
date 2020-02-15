@@ -1,4 +1,4 @@
-#Dice probabilities for the game Dragonwood
+# Dice probabilities for the game Dragonwood
 
 Each die has sides: 1, 2, 2, 3, 3, 4
 
