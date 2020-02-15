@@ -9,7 +9,7 @@
   (printf "\n**number of dice = ~a**, " numdice)
   (printf "total possibilities = ~a\n" numpossible)
   (printf "| Want | Chances | % |\n")
-  (printf "| :---: | :---: | :---: |\n"))
+  (printf "| :---: | ---: | ---: |\n"))
 
 ;; this must be macro to generate the `$n` # of for* args
 (define-syntax generate-probabilities
