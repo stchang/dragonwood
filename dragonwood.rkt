@@ -6,7 +6,7 @@
 (define NUMSIDES (length DIE))
 
 (define (print-header numdice numpossible)
-  (printf "\n*number of dice = ~a*, " numdice)
+  (printf "\n**number of dice = ~a**, " numdice)
   (printf "total possibilities = ~a\n" numpossible)
   (printf "| Want | Chances | % |\n")
   (printf "| :---: | :---: | :---: |\n"))
